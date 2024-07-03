@@ -9,17 +9,23 @@ function createGrid(size){
           const square = document.createElement("div");
           row.appendChild(square);
           square.className = "gridSquare";
-        }
-    }
-    const item = document.querySelectorAll('.gridSquare');
-        item.forEach((square) => {
+        square.style.height =(800/size) + "px";
         square.addEventListener("mouseover", ()=>{
         square.style.background = "black";   
         });
-    });
+        }   
+    }
+    };
     
-      }
-    
-createGrid(16);
+      
+const btn=document.querySelector("button");
+btn.addEventListener("click", ()=>{
+    let input=prompt("Enter the number of rows and columns")
+    if (input>100 || input<1){
+        alert("Invalid input");
+    }else {
+        createGrid(input);
+    }    
+})
 
 
