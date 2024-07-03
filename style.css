@@ -1,5 +1,28 @@
 .container{
+    height: 400px;
+    width: 400px;
+    background-color: white;
+    border: black solid 1px;
+}
+
+.content{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.row{
+    min-height: 23px;
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid black;
+
+}
+
+.gridSquare{
+    display: flex;
+    border: solid black 1px;
+    max-width: 25px;
+    max-height: 25px;
+    
 }
